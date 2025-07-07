@@ -142,12 +142,6 @@ footer {
 }
 
 /* smaller views **************************/
-@media (max-width: 760px) {
-    #right-card {
-        min-width: 180px;
-    }
-}
-
 @media (max-width: 685px) {
     header {
         height: 130px;
