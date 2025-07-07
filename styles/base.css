@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(25, 25, 25);
+    padding: 5px;
+}
+
+body {
+    background-color: white;
+    max-width: 1300px;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    background-color: rgb(29, 77, 114);
+    color: white;
+    padding: 5px;
+    line-height: 1.5;
+    height: 100px;
+}
+
+#course-title {
+    display: block;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(51, 51, 51);
+    padding: 5px 0;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+}
+
+nav li {
+    flex: 1 0 auto;
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+	in this example, the items will not shrink but can 
+    grow to fill the space at natural content width*/
+}
+
+nav a {
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration-line: overline underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 20px 10px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    background-color: rgb(29, 77, 114);
+    color: white;
+}
+
+#section-container {
+    display: flex;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+#span-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 470px;
+}
+
+#left-span {
+    width: 62%;
+    float: left;
+    margin: 10px;
+}
+
+#right-span {
+    max-width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+#bottom-span img {
+    float: left;
+    margin: 30px 10px 10px 10px;
+}
+
+#bottom-span p {
+    margin: 10px 50px 10px 10px;
+}
+
+#left-card {
+    width: auto;
+}
+
+#right-card {
+    min-width: 250px;
+    max-width: 300px;
+    border: 1px solid black;
+}
+
+#right-card ul {
+    padding: 50px 0 30px 30px;
+}
+
+footer {
+    background-color: rgb(29, 77, 114);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+/* smaller views **************************/
+@media (max-width: 760px) {
+    #right-card {
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 685px) {
+    header {
+        height: 130px;
+    }
+
+    nav {
+        height: auto;
+        width: 95%;
+        justify-self: center;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    nav li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border: 1px solid rgb(35, 35, 35);
+    }
+
+    nav a {
+        padding: 3% 30%;
+    }
+
+    #section-container {
+        flex-direction: column;
+    }
+
+    #span-container {
+        max-width: 470px;
+        min-width: 400px;
+    }
+
+    #left-span {
+        width: 57%;
+    }
+
+    #right-card {
+        min-width: 80%;
+        align-self: center;
+        padding: 5px;
+    }
+
+    #right-card ul {
+        padding: 10px 0 10px 40px;
+    }
+}
