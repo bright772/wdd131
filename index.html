@@ -3,12 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="An index webpage for the BYU-Idaho WDD 131 course">
+    <meta name="author" content="Myeongseon Lee">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Lee</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/leemyeongseon/">My LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/7?lang=eng&id=p12#p12">Scripture</a>
+                </li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Myeongseon Lee</h1>
+        <div id="section-container">
+            <section class="card" id="left-card">
+                <h2>About Me</h2>
+                <span id="span-container">
+                    <div id="top-span">
+                        <span id="left-span">
+                            <p>My name is Myeongseon Lee, and I am an online student at BYU-Idaho.
+                                I currently study web development to grow my skills in creating websites.
+                                This course practices the fundamentals of dynamic web development, including HTML, CSS,
+                                and
+                                JavaScript.</p>
+                        </span>
+                        <span id="right-span">
+                            <img src="images/face.jpg" alt="my face" width="150" height="150">
+                        </span>
+                    </div>
+
+                    <div id="bottom-span">
+                        <h3>Jeonju, South Korea</h3>
+                        <img src="images/jeonju.jpg" alt="my city" width="240" height="150">
+                        <p>Jeonju is known for its history, traditional culture, and delicious food,
+                            especially bibimbap.</p>
+                        <p>Jeonju is also famous for Hanok Village, where visitors can see traditional
+                            Korean houses and culture.</p>
+                        <p>This city beautifully blends old and new, with ancient palaces and modern
+                            architecture.</p>
+                    </div>
+                </span>
+            </section>
+            <section class="card" id="right-card">
+                <h2>Web Dev Resources</h2>
+                <p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+                    <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy</a>
+                    </li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://www.coursera.org/">Coursera</a></li>
+                    <li><a href="https://www.edx.org/">edX</a></li>
+                </ul>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Myeongseon Lee, Korea</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
