@@ -130,7 +130,8 @@ h3 {
 }
 
 #right-card ul {
-    padding: 50px 0 30px 30px;
+    padding: 40px 0 30px 30px;
+    line-height: 1.5;
 }
 
 footer {
