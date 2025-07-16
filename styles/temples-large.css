@@ -1,0 +1,46 @@
+@media only screen and (min-width: 42em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigationUl {
+        display: flex;
+        /* change state in small view */
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
+
+    .navigationUl li {
+        width: 100%;
+        margin: 0;
+    }
+
+    #growMenu {
+        display: none;
+    }
+
+    .navigationUl.open {
+        display: flex;
+    }
+
+    main {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .templeContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width: 60em) {
+    .templeContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main {
+        justify-content: center;
+    }
+}
