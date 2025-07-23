@@ -1,10 +1,12 @@
 :root {
     --soft: rgba(255, 255, 255, 0.7);
+    --main-color: rgb(29, 77, 114);
+    --accent: rgb(51, 51, 51);
 }
 
 body {
     margin: 0;
-    background-color: rgb(51, 51, 51);
+    background-color: var(--accent);
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -16,7 +18,7 @@ footer {
 header {
     display: grid;
     grid-template: 1fr 1fr / 1fr;
-    background-color: rgb(29, 77, 114);
+    background-color: var(--main-color);
     color: white;
     padding: 5px;
     line-height: 1.5;
@@ -112,7 +114,7 @@ ul {
 }
 
 footer {
-    background-color: rgb(29, 77, 114);
+    background-color: var(--main-color);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -154,7 +156,7 @@ footer {
     }
 
     h2 {
-        background-color: rgb(51, 51, 51);
+        background-color: var(--accent);
         margin-top: 10px;
         margin-left: -10px;
         margin-right: 20px;
