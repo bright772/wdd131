@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Myeongseon Lee</title>
+    <meta name="description" content="An assignment page for BYU-Idaho WDD 131">
+    <meta name="author" content="Myeongseon Lee">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sulawesi</h1>
+    </header>
+    <main>
+        <picture id="image">
+            <source srcset="images/monkey-sm.webp" media="(max-width: 599px)">
+            <source srcset="images/monkey-lg.webp" media="(min-width: 600px)">
+            <img src="images/monkey-sm.webp" alt="monkey" height="400" width="400">
+        </picture>
+        <div id="data-div">
+            <h2>Data</h2>
+            <div class="left-ul-div">
+                <ul>
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Languages:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                    <li>Internet TLD:</li>
+                </ul>
+            </div>
+            <div class="right-ul-div">
+                <ul>
+                    <li>thisthisthus</li>
+                    <li>that</li>
+                    <li>this</li>
+                    <li>that</li>
+                    <li>this</li>
+                    <li>that</li>
+                    <li>this</li>
+                    <li>that</li>
+                </ul>
+            </div>
+        </div>
+        <div id="weather-div">
+            <h2 id="weather-heading">Weather</h2>
+            <span>
+                <img src="images/icon-sun-rain.svg" alt="weather" height="70px" width="70px">
+            </span>
+            <div class="left-ul-div">
+                <ul>
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+            </div>
+            <div class="right-ul-div">
+                <ul>
+                    <li>this</li>
+                    <li>that long item</li>
+                    <li>fast</li>
+                    <li>cold</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Myeongseon Lee, Korea</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
