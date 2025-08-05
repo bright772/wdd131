@@ -1,0 +1,94 @@
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    min-width: 25rem;
+    max-width: 50rem;
+}
+
+header {
+    background-color: #2D032B;
+    color: #FFFFFF;
+    line-height: 5rem;
+    text-align: center;
+}
+
+form {
+    background-color: #D5CDD5;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+}
+
+.stars {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: -1rem;
+}
+
+#products,
+#date, #message, #name {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 100%;
+    padding-left: 0.5rem;
+}
+
+#date, #name {
+    width: 99%;
+}
+
+#date {
+    margin-top: 1rem;
+}
+
+#features {
+    margin-bottom: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+#message {
+    width: 100%;
+}
+
+#yourName {
+    margin-top: 2rem;
+}
+
+.optional {
+    margin-bottom: 1rem;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.optional::after {
+    content: " (Optional)";
+    color: blue;
+    font-style: italic;
+}
+
+button {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #2D032B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem;
+}
