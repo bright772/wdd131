@@ -89,6 +89,7 @@ const temples = [
 ];
 
 const container = document.getElementById("templeContainer");
+const header = document.querySelector("main h2");
 
 // Function to create and display temple cards
 function displayTemples(templeArray) {
@@ -133,6 +134,8 @@ displayTemples(temples);
 // Event listeners for navigation buttons
 document.getElementById("home").addEventListener("click", (event) => {
     displayTemples(temples);
+    header.innerHTML = "All Temples";
+    event.preventDefault(); // Prevent default link behavior
     toggleFunction();
 });
 
@@ -142,6 +145,8 @@ document.getElementById("old").addEventListener("click", (event) => {
         return year < 1900;
     });
     displayTemples(oldTemples);
+    header.innerHTML = "Old Temples";
+    event.preventDefault(); // Prevent default link behavior
     toggleFunction();
 });
 
@@ -151,17 +156,23 @@ document.getElementById("new").addEventListener("click", (event) => {
         return year > 2000;
     });
     displayTemples(newTemples);
+    header.innerHTML = "New Temples";
+    event.preventDefault(); // Prevent default link behavior
     toggleFunction();
 });
 
 document.getElementById("large").addEventListener("click", (event) => {
     const largeTemples = temples.filter(temple => temple.area > 90000);
     displayTemples(largeTemples);
+    header.innerHTML = "Large Temples";
+    event.preventDefault(); // Prevent default link behavior
     toggleFunction();
 });
 
 document.getElementById("small").addEventListener("click", (event) => {
     const smallTemples = temples.filter(temple => temple.area < 10000);
     displayTemples(smallTemples);
+    header.innerHTML = "Small Temples";
+    event.preventDefault(); // Prevent default link behavior
     toggleFunction();
 });
