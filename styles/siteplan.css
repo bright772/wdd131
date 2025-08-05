@@ -1,0 +1,96 @@
+:root {
+    --color1: #1D4D72;
+    --color2: #FFFFFF;
+    --color3: #333333;
+    --color4: #848484;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #191919;
+    padding: 5px;
+}
+
+body {
+    background-color: white;
+    max-width: 1200px;
+    min-width: 600px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    display: grid;
+    grid-template: 1fr;
+}
+
+header {
+    background-color: #1D4D72;
+    color: white;
+    padding: 1rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+section {
+    background-color: #848484;
+    padding: 0.5rem;
+}
+
+section div {
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+h2 {
+    background-color: #1D4D72;
+    color: #FFFFFF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    padding: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.large-p {
+    font-size: 1.5rem;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+.color-span {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    margin-bottom: -5px;
+}
+
+.color-span~p {
+    display: inline-block;
+}
+
+#color1 {
+    background-color: var(--color1);
+    border: 1px solid black;
+}
+
+#color2 {
+    background-color: var(--color2);
+    border: 1px solid black;
+}
+
+#color3 {
+    background-color: var(--color3);
+    border: 1px solid black;
+}
+
+#color4 {
+    background-color: var(--color4);
+    border: 1px solid black;
+}
