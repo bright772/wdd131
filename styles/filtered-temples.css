@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-width: 400px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+header,
+footer {
+    color: white;
+    background-color: rgb(60, 10, 100);
+    text-align: center;
+}
+
+h1 {
+    font-size: larger;
+}
+
+header {
+    line-height: 1.7;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 0;
+}
+
+#growMenu {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    font-size: larger;
+}
+
+#growMenu::after {
+    content: '≡';
+}
+
+#growMenu.open:after {
+    content: 'X';
+}
+
+nav {
+    display: flex;
+}
+
+.navigationUl {
+    display: none;
+    margin: 0 0 1rem 0;
+}
+
+.navigationUl.open {
+    display: block;
+    width: 100%;
+}
+
+.navigationUl li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+button {
+    display: block;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid rgb(60, 10, 100);
+    width: 100%;
+    height: 2rem;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+
+main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#templeContainer {
+    display: grid;
+}
+
+.temple-card {
+    margin: 1rem;
+    width: 95%;
+}
+
+.temple-card:hover {
+    transform: translate(3px, -3px);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.temple-card img {
+    width: 400px;
+    height: auto;
+}
+
+footer {
+    color: white;
+    padding: 10px 0;
+    line-height: 1.5;
+    height: 100%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="JavaScript loading of a temple image.">
+    <meta name="author" content="Myeongseon Lee">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap">
+    <link href="styles/filtered-temples.css" rel="stylesheet">
+    <link href="styles/filtered-temples-large.css" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <a id="growMenu" href="#" title="Menu button"></a>
+        <nav>
+            <ul class="navigationUl">
+                <li><button id="home">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="templeContainer">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Myeongseon Lee, Korea</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
