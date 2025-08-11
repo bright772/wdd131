@@ -10,8 +10,11 @@ let count = localStorage.getItem('submissionCount');
 count = count ? parseInt(count) : 0;
 document.getElementById('submissionCount').textContent = `Number of submissions: ${count}`;
 
+// Increment the count for future submissions
+localStorage.setItem('submissionCount', count + 1);
+
 // Optional: Clear contact data after viewing
-// localStorage.removeItem('contactFormData');
+localStorage.removeItem('contactFormData');
 
 function goHome() {
     window.location.href = 'index.html';

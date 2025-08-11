@@ -12,39 +12,133 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
         rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
-    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/costs.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Lee English</h1>
+        <h1>
+            Lee English
+            <svg class="big-svg" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <image height="30" width="30" href="images/plain-flag-svgrepo-com.svg" />
+            </svg>
+        </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="costs.html">Costs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a class="nav-a" href="index.html">
+                        <svg class="little-left-svg hide-left-svg" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                        Home
+                        <svg class="little-right-svg hide-right-svg" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="classes.html">
+                        <svg class="little-left-svg hide-left-svg" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                        Classes
+                        <svg class="little-right-svg hide-right-svg" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-a" href="costs.html">
+                        <svg class="little-left-svg" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                        Costs
+                        <svg class="little-right-svg hide-right-svg" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <image height="15" width="15" href="images/plain-flag-svgrepo-com.svg" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="contact-li"><a class="contact" href="contact.html">Contact Us!</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Pricing</h2>
-        <table>
-            <tr>
-                <th>Lesson Type</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td>Elementary School</td>
-                <td>$30 per hour</td>
-            </tr>
-            <tr>
-                <td>Middle School</td>
-                <td>$35 per hour</td>
-            </tr>
-        </table>
-        <p>Special discounts available for packages!</p>
+    <main id="costs-main">
+        <h2 class="shared-h2">Pricing</h2>
+        <section class="costs-sections" id="costs-section1">
+            <form id="students-form">
+                <div id="students-input-container">
+                    <div id="students-input-row">
+                        <div id="students-input-label">
+                            <label>How many students?</label>
+                        </div>
+
+                        <div id="students-input-choice">
+                            <div id="radio-box">
+                                <input type="radio" id="oneStudent" name="students" value="1" required>
+                                <input type="radio" id="twoStudent" name="students" value="2">
+                                <input type="radio" id="threeStudent" name="students" value="3">
+                                <input type="radio" id="fourStudent" name="students" value="4">
+                            </div>
+
+                            <div id="label-box">
+                                <label for="oneStudent">1</label>
+                                <label for="twoStudent">2</label>
+                                <label for="threeStudent">3</label>
+                                <label for="fourStudent">4</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="grade-input-row">
+                        <div id="grade-input-label">
+                            <label for="gradeAll">How old are they?</label>
+                        </div>
+                        <div id="grade-selector">
+                            <select name="gradeAll" id="gradeAll">
+                                <option value="" disabled selected>Choose grade:</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- <div id="select-box">
+                        <select name="grade1" id="grade1" required>
+                            <option value="">Which grade?</option>
+                        </select>
+                        <select name="grade2" id="grade2" required>
+                            <option value="">Which grade?</option>
+                        </select>
+                        <select name="grade3" id="grade3" required>
+                            <option value="">Which grade?</option>
+                        </select>
+                        <select name="grade4" id="grade4" required>
+                            <option value="">Which grade?</option>
+                        </select>
+                    </div> -->
+                </div>
+            </form>
+
+            <table id="costs-table">
+                <tr>
+                    <th>Student #</th>
+                    <th>Grade</th>
+                    <th>Per Month</th>
+                </tr>
+                <!-- <tr>
+                    <td>Elementary School</td>
+                    <td>$30 per hour</td>
+                </tr>
+                <tr>
+                    <td>Middle School</td>
+                    <td>$35 per hour</td>
+                </tr> -->
+            </table>
+        </section>
     </main>
 
     <footer>

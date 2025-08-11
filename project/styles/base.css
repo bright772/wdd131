@@ -25,18 +25,20 @@ footer {
 
 header {
     width: 100%;
-    background-color: var(--header-color);
+    background-color: #3f78a4;
     color: white;
     padding: 1rem 0;
     text-align: center;
 }
 
 h1 {
+    background-color: var(--header-color);
     padding: 1rem 6rem;
     margin: 0 1rem 1rem 1rem;
     border: 4px outset var(--border-color);
     width: max-content;
     justify-self: center;
+    text-decoration: underline;
 }
 
 .big-svg {
@@ -44,7 +46,7 @@ h1 {
 }
 
 nav {
-    width: 98%;
+    width: 90%;
     height: 6rem;
     justify-self: center;
     justify-content: center;
@@ -93,7 +95,7 @@ nav li:hover .hide-right-svg {
     visibility: visible;
 }
 
-nav a {
+.nav-a {
     background-color: var(--hover-color);
     color: white;
     text-decoration: none;
@@ -105,11 +107,18 @@ nav a {
     justify-content: center;
 }
 
-nav li:hover a {
+nav li:hover .nav-a {
     background-color: var(--accent-color);
 }
 
-#contact {
+.contact {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(248, 48, 48);
     border-radius: 1.5rem;
     transform: translateY(7px);
@@ -117,8 +126,22 @@ nav li:hover a {
     justify-self: center;
 }
 
-#contact:hover {
+.contact-li:hover {
+    transform: none;
+}
+
+.contact:hover {
     background-color: rgb(255, 12, 12);
+}
+
+.contact:hover::before,
+.contact:hover::after {
+    content: "\2733";
+}
+
+#contact-on::before,
+#contact-on::after {
+    content: "\2733";
 }
 
 main {
@@ -141,12 +164,14 @@ main {
     margin: 0 1rem;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    align-self: center;
 }
 
 .text-area-right {
     margin: 0 1rem;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    align-self: center;
 }
 
 .image-left {
@@ -183,12 +208,7 @@ main {
     height: 3rem;
 }
 
-/* Clearfix (important for proper layout) */
-.clearfix {
-    clear: both;
-}
-
-img {
+.home-images {
     width: 150px;
     height: 150px;
     display: block;
@@ -200,11 +220,153 @@ figcaption {
 }
 
 /* Classes.html */
+.shared-h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: larger;
+    width: 60%;
+    border: 1px solid black;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    background-color: #75b1df;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
 .classes-ul {
     list-style: disc inside;
+    padding: 1rem 0;
+}
+
+#classes-main {
+    display: grid;
+    grid-template: 4rem 1fr 1fr / 1fr;
+    height: 500px;
+}
+
+.classes-sections {
+    margin: 1rem;
+    background-color: rgb(244, 240, 180);
+    border: 2px ridge var(--border-color);
+}
+
+#classes-section1 {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template: 1fr / 170px 1fr;
+}
+
+.classes-images {
+    width: 150px;
+    height: 150px;
+    display: block;
+    border: 1px solid #848484;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: center;
+    margin: 1rem;
+}
+
+#classes-section1>div {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: center;
+    margin: 0 1rem;
+}
+
+#classes-section2 {
+    padding: 1rem;
+    text-align: center;
+    height: min-content;
 }
 
 /* Costs.html */
+#costs-main {
+    display: grid;
+    grid-template: 4rem 1fr / 1fr;
+}
+
+.costs-sections {
+    margin: 1rem;
+    background-color: rgb(244, 240, 180);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: grid;
+    border: 2px ridge var(--border-color);
+    padding: 1rem;
+}
+
+#costs-section1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+}
+
+#students-input-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+}
+
+#students-input-row,
+#grade-input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
+    border: 1px solid var(--border-color);
+}
+
+/* #radio-box,
+#label-box,
+#select-box {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+} */
+
+/* #radio-box>input {
+    height: 1rem;
+} */
+
+/* #label-box>label,
+#select-box>select {
+    height: 1.2rem;
+} */
+
+/* #label-box,
+#select-box {
+    padding-top: 1px;
+} */
+
+#students-input-label,
+#students-input-choice,
+#grade-input-label,
+#grade-selector {
+    align-self: center;
+}
+
+#radio-box>input {
+    margin: 0 13px;
+}
+
+#label-box {
+    padding-left: 2px;
+}
+
+#label-box>label {
+    margin: 0 15px;
+}
+
+#grade-input-label {
+    margin-right: 2rem;
+}
+
+#gradeAll {
+    height: 2rem;
+    font-size: medium;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -215,54 +377,68 @@ th,
 td {
     border: 1px solid #848484;
     padding: 0.5em;
-    text-align: left;
+    text-align: center;
 }
 
 /* Contact.html */
-form {
-    max-width: 600px;
-    margin: auto;
+#contact-form {
+    margin: 1rem;
+    text-align: center;
 }
 
-label {
+#contact-form label {
     display: block;
-    margin-top: 1em;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 0.5em;
+#contact-form input,
+#contact-form textarea {
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
 }
 
-button {
-    margin-top: 1em;
-    padding: 0.75em 1.5em;
+#contact-form textarea {
+    min-height: 100px;
+    /* Prevents textarea from collapsing if empty */
+}
+
+#contact-form button {
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#contact-message::after {
+    content: "*";
+    color: red;
 }
 
 /* Review.html */
-.review-body {
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .review-main {
+    margin: 1rem auto;
+    text-align: center;
+    min-width: 400px;
     max-width: 600px;
-    margin-top: 2em;
     padding: 1em;
     border: 1px solid #848484;
-    border-radius: 8px;
+    border-radius: 1rem;
     background-color: #f9f9f9;
 }
 
 .review-button {
     border: none;
+    font-size: larger;
+    padding: 1rem 0;
     background-color: #1D4D72;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 1rem;
 }
 
 .review-button:hover {
@@ -279,17 +455,14 @@ button {
         flex-direction: row;
     }
 
-    #contact {
+    .contact {
         transform: translateX(5px);
+        width: 91%
     }
 
-    main {
+    #home-main {
         display: flex;
         justify-content: space-around;
-    }
-
-    #home-main h2 {
-        width: 100%;
     }
 
     .home-sections {
@@ -301,6 +474,7 @@ button {
     .text-area-right {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        align-self: normal;
     }
 
     .image-left,
@@ -309,10 +483,65 @@ button {
         grid-row: 1 / 2;
         align-self: normal;
         justify-self: center;
+        margin-top: 0.5rem;
     }
 
-    img {
+    .home-images {
         width: clamp(150px, 16vw, 200px);
         height: auto;
+    }
+
+    #classes-main {
+        display: grid;
+        grid-template: 4rem 1fr / 1fr 1fr 1fr 1fr;
+    }
+
+    .shared-h2 {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    #classes-section1 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #classes-section2 {
+        height: min-content;
+        align-self: center;
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        align-content: center;
+    }
+
+    .classes-images {
+        align-self: center;
+        margin: 1rem;
+    }
+
+    #classes-section1>div {
+        margin: 1rem;
+    }
+
+    #costs-main {
+        display: grid;
+        grid-template: 4rem 1fr / 1fr 1fr 1fr 1fr;
+    }
+
+    #costs-section1 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+    }
+
+    #contact-main {
+        display: grid;
+        grid-template: 4rem 1fr / 1fr 1fr 1fr 1fr;
+    }
+
+    #contact-form {
+        grid-column: 1 / 5;
     }
 }
