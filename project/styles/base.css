@@ -3,7 +3,7 @@
     --background-color: #FFFFFF;
     --accent-color: #3d3d3d;
     --border-color: #848484;
-    --hover-color: #595959;
+    --hover-color: #565656;
 }
 
 body {
@@ -73,7 +73,7 @@ nav li:hover {
 }
 
 .little-left-svg {
-    filter: brightness(0) invert(1);
+    filter: brightness(1) invert(1);
     transform: translateX(-10px) scaleX(-1);
     transform-origin: center;
 }
@@ -83,7 +83,7 @@ nav li:hover {
 }
 
 .little-right-svg {
-    filter: brightness(0) invert(1);
+    filter: brightness(1) invert(1);
     transform: translateX(10px);
 }
 
