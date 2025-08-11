@@ -24,12 +24,10 @@
     <main>
         <form action="review.html" method="GET">
             <div class="question">
-                <label>
-                    <p class="required">Product Name</p>
-                    <select name="products" id="products" required>
-                        <option value="" disabled selected>Choose a Product ...</option>
-                    </select>
-                </label>
+                <label class="required">Product Name</label>
+                <select name="products" id="products" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
             </div>
 
             <div>
@@ -44,7 +42,6 @@
             <div>
                 <label class="required" for="date">Date of Installation</label>
                 <input type="date" id="date" name="date" required>
-                </label>
             </div>
 
             <div>
@@ -62,9 +59,7 @@
             <label class="optional" id="yourName" for="name">Your name</label>
             <input type="text" id="name" name="name">
 
-            <button type="submit">
-                <h2>Post Review</h2>
-            </button>
+            <button type="submit">Post Review</button>
         </form>
     </main>
 
