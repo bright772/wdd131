@@ -34,31 +34,32 @@
 
             <div>
                 <label class="required">Overall Rating</label>
-                    <label class="stars"><input type="radio" id="oneStar" name="stars" value="1" required><br>☆</label>
-                    <label class="stars"><input type="radio" id="twoStar" name="stars" value="2" required><br>☆☆</label>
-                    <label class="stars"><input type="radio" id="threeStar" name="stars" value="3" required><br>☆☆☆</label>
-                    <label class="stars"><input type="radio" id="fourStar" name="stars" value="4" required><br>☆☆☆☆</label>
-                    <label class="stars"><input type="radio" id="fiveStar" name="stars" value="5" required><br>☆☆☆☆☆</label>
+                <label class="stars"><input type="radio" id="oneStar" name="stars" value="1" required><br>☆</label>
+                <label class="stars"><input type="radio" id="twoStar" name="stars" value="2" required><br>☆☆</label>
+                <label class="stars"><input type="radio" id="threeStar" name="stars" value="3" required><br>☆☆☆</label>
+                <label class="stars"><input type="radio" id="fourStar" name="stars" value="4" required><br>☆☆☆☆</label>
+                <label class="stars"><input type="radio" id="fiveStar" name="stars" value="5" required><br>☆☆☆☆☆</label>
             </div>
 
             <div>
-                <label class="required">Date of Installation</label>
-                    <input type="date" id="date" name="date" required>
+                <label class="required" for="date">Date of Installation</label>
+                <input type="date" id="date" name="date" required>
                 </label>
             </div>
 
             <div>
-                <label id="features">Which features did you find useful in the product?<br><i>(Check all that apply)</i></label>
+                <label id="features">Which features did you find useful in the product?<br><i>(Check all that
+                        apply)</i></label>
                 <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
                 <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
                 <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
             </div>
 
-            <label class="optional">Written Review</label>
+            <label class="optional" for="message">Written Review</label>
             <textarea id="message" name="message" rows="4"></textarea>
 
-            <label class="optional" id="yourName">Your name</label>
+            <label class="optional" id="yourName" for="name">Your name</label>
             <input type="text" id="name" name="name">
 
             <button type="submit">

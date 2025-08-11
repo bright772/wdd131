@@ -2,7 +2,7 @@
 const contactData = localStorage.getItem('contactFormData');
 if (contactData) {
     const data = JSON.parse(contactData);
-    document.querySelector('h2').textContent = `Thank you, ${data.name}!`;
+    document.querySelector('h2').textContent = `Your message has been received, ${data.name}!`;
 }
 
 // Retrieve and update submission count
